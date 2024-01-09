@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.borderWelcom{
+border-radius:50px 50px 0px 0px;
+/* background: radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(164, 101, 234, 0.20) 0%, rgba(47, 42, 82, 0.20) 77.08%, rgba(118, 65, 218, 0.20) 100%);
+backdrop-filter: blur(40px) !important;
+background-color: rgba(164, 101, 234, 1), rgba(47, 42, 82, 1), rgba(118, 65, 218, 1);;
+flex-shrink: 0; 
+background-color: #A465EA, #2F2A52, #7641DA; */
+background-image: url(/src/assets/img/Rectangle.png);
+background-repeat: no-repeat;
+background-size:cover;
+}
+.buttonW{
+background: linear-gradient(90deg, rgba(118, 65, 218, 0.70) 0.16%, #A465EA 101.62%);
+}
+/* .InputName{
+border-radius: 8px;
+border: 0.304px solid #FFF;
+background:lightgray 0% 0% / 23.434971272945404px 23.434971272945404px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.04) 77.08%, rgba(255, 255, 255, 0.00) 100%);
+background-blend-mode: overlay, normal;
+backdrop-filter: blur(6.0781121253967285px);
+} */
+.inputR{
+    background-image: url(/src/assets/img/input.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
