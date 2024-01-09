@@ -6,7 +6,7 @@ const Login = () => {
       <div className="">
         <img className="w-full" src={signUp} alt="" />
       </div>
-      <div className="borderWelcom absolute top-[89%]  left-0 w-full  pb-16">
+      <div className="borderWelcom absolute top-[89%] h-[64vh]  left-0 w-full  pb-16">
         <div className="flex justify-center text-[40px] text-white my-4">
           <p>ورود</p>
         </div>
