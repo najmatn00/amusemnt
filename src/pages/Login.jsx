@@ -1,6 +1,7 @@
 import signUp from "../assets/img/signup.png";
 import { Outlet } from "react-router-dom";
 const Login = () => {
+
   return (
     <div className=" relative">
       <div className="">
@@ -14,9 +15,7 @@ const Login = () => {
           <p>دلمون براتون تنگ شده بود</p>
         </div>
         <Outlet />
-        <div className="w-full flex items-center justify-center mt-6">
-          <button className="btn bg-violet-500 text-white px-16">ورود</button>
-        </div>
+       
         <div className="">
           <div className=""></div>
           <div className=""></div>
