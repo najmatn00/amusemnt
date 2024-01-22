@@ -5,6 +5,7 @@ import Welcom from "./pages/Welcom";
 import LoginPhone from "./pages/login-sub/login-phone";
 import LoginUserName from "./pages/login-sub/login-username";
 import IsLogin from "./utility/isLogin";
+import Machine from "./pages/machine";
 let Router = [
   {
     path: "/",
@@ -16,11 +17,11 @@ let Router = [
   },
   {
     path: "/home",
-    element: (
-      <IsLogin>
-        <h1>slaam</h1>
-      </IsLogin>
-    ),
+    element: <h1>slaam</h1>,
+  },
+  {
+    path: "/machine",
+    element: <Machine/>,
   },
   {
     path: "/login",

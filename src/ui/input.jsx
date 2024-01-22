@@ -7,7 +7,7 @@ const Input = ({
   return (
     <>
       <div className="text-right p-3 w-full">
-        <p className="text-md  text-white">{label}</p>
+        <p className="text-md  text-white anjoman">{label}</p>
       </div>
       <div className="flex justify-center flex-col items-center">
         <input

@@ -35,7 +35,7 @@ const LoginPhone = () => {
           )}
         />
         <div className="w-full flex items-center justify-center mt-6">
-          <button className="btn bg-violet-500 text-white px-16">ورود</button>
+          <button className="btn bg-violet-500 text-white px-36 py-4">ورود</button>
         </div>
       </form>
     </>

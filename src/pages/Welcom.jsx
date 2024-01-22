@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom/dist";
 import { Link } from "react-router-dom/dist";
 const Welcom = () => {
   return (
-    <div className=" relative">
+    <div className=" relative ">
       <div className="">
         <img className="w-full" src={welcom} alt="" />
       </div>
-      <div className="borderWelcom absolute top-[89%]  left-0 w-full">
-        <div className="flex justify-center text-white font-normal text-[40px] mt-8">
-          <h2>!خوش آمدید</h2>
+      <div className="borderWelcom absolute top-[89%]  left-0 w-full bg-[#1C0F2A]">
+        <div className="flex justify-center text-white font-normal text-[40px] mt-8 ">
+          <h2 className="wmajik">!خوش آمدید</h2>
         </div>
         <div className="flex justify-center items-center mx-4 text-center text-white text-sm line-[21.93px] my-10">
           <p>
@@ -22,19 +22,19 @@ const Welcom = () => {
         </div>
         <div className="flex justify-center flex-col gap-4 items-center ">
           <Link
-            className=" py-4 px-36  text-3xl text-white rounded-[15px] border-[#A465EA] border-[2.5px] buttonW"
+            className=" py-4 px-36  text-3xl text-white rounded-[15px] border-[#A465EA] border-[2.5px] buttonW wmajik "
             to={"/signup"}
           >
-          ثبت نام
+            ثبت نام
           </Link>
           <Link
-            className=" py-4 px-40  text-3xl text-white rounded-[15px] border-[#A465EA] border-[2.5px]"
+            className=" py-4 px-40  text-3xl text-white rounded-[15px] border-[#A465EA] border-[2.5px] wmajik"
             to={"/login"}
           >
             ورود
           </Link>
         </div>
-        <div className="flex justify-center text-white my-16 text-[11px]">
+        <div className="flex justify-center text-white my-16 text-[11px] anjoman">
           <p>توسعه و نگهداری توسط تیم ما</p>
         </div>
       </div>

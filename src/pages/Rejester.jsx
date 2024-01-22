@@ -27,12 +27,14 @@ const Rejester = () => {
       <div className="">
         <img className="w-full" src={signUp} alt="" />
       </div>
-      <div className="borderWelcom absolute top-[89%]  left-0 w-full  h-[64vh] pb-16">
+      <div className="bg-[#1C0F2A] absolute top-[85%] rounded-t-3xl left-0 w-full  h-[64vh] pb-16">
         <div className="flex justify-center text-[40px] text-white my-4">
-          <p>ثبت نام</p>
+          <p className="wmajik">ثبت نام</p>
         </div>
         <div className=" text-sm text-white flex justify-center">
-          <p>!دنیایی از شگفتی های سرشار از آدرنالین را کشف کن</p>
+          <p className="wmajik">
+            !دنیایی از شگفتی های سرشار از آدرنالین را کشف کن
+          </p>
         </div>
         <form action="" onSubmit={handleSubmit(submitHandler)}>
           <Controller
@@ -41,7 +43,7 @@ const Rejester = () => {
             defaultValue=""
             render={({ field }) => <Input {...field} />}
           />
-          
+
           <Controller
             name="phone"
             control={control}
@@ -71,9 +73,9 @@ const Rejester = () => {
           <div className=" flex items-start justify-center mt-10">
             <button
               type="submit"
-              className="btn bg-violet-500 text-white px-16"
+              className="btn bg-violet-500 text-white px-36 py-4 wmajik text-[25px]"
             >
-              sign up
+              ثبت نام
             </button>
           </div>
         </form>
