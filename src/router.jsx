@@ -12,6 +12,10 @@ let Router = [
     element: <Welcom />,
   },
   {
+    path: "/test",
+    element: <MainTour />,
+  },
+  {
     path: "/signup",
     element: <Rejester />,
   },
