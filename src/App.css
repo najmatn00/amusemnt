@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+.bg-gradiant-ticket {
+  background: radial-gradient(
+    151.92% 127.02% at 15.32% 21.04%,
+    rgba(164, 101, 234, 0.2) 0%,
+    rgba(47, 42, 82, 0.2) 77.08%,
+    rgba(118, 65, 218, 0.2) 100%
+  );
+}

@@ -5,10 +5,15 @@ import Welcom from "./pages/Welcom";
 import LoginPhone from "./pages/login-sub/login-phone";
 import LoginUserName from "./pages/login-sub/login-username";
 import IsLogin from "./utility/isLogin";
+import MainTour from "./pages/tour/main";
 let Router = [
   {
     path: "/",
     element: <Welcom />,
+  },
+  {
+    path: "/test",
+    element: <MainTour />,
   },
   {
     path: "/signup",
