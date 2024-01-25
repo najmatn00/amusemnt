@@ -6,6 +6,7 @@ import LoginPhone from "./pages/login-sub/login-phone";
 import LoginUserName from "./pages/login-sub/login-username";
 import IsLogin from "./utility/isLogin";
 import Machine from "./pages/machine";
+import MainTour from "./pages/tour/main";
 let Router = [
   {
     path: "/",
