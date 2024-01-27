@@ -14,7 +14,7 @@ let Router = [
   },
   {
     path: "/test",
-    element: <MainTour />,
+    element: <h1>salam</h1>,
   },
   {
     path: "/signup",
