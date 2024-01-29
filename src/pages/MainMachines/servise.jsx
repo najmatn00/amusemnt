@@ -6,7 +6,7 @@ const Servise = () => {
       <div className=" mb-16 absolute flex items-center  w-full  justify-between bottom-0 right-0">
         <Link
           to="/su"
-          className="borderm h-16 px-16 rounded-r-lg text-[#2F2A52] bg-[#EDDEF3]"
+          className="border text-cente  flex items-center justify-center  h-16 px-16 rounded-r-lg text-[#2F2A52] bg-[#EDDEF3]"
         >
           خرید بلیط
         </Link>

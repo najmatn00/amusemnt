@@ -16,11 +16,7 @@ const Login = () => {
           <p className="wmajik">(:دلمون براتون تنگ شده بود</p>
         </div>
         <Outlet />
-        {/* <div className="">
-          <div className=""></div>
-          <div className=""></div>
-          <div className=""></div>
-        </div> */}
+     
       </div>
     </div>
   );

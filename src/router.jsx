@@ -24,10 +24,6 @@ let Router = [
     element: <Su />,
   },
   {
-    path: "/home",
-    element: <h1>home</h1>,
-  },
-  {
     path: "/machine",
     element: <Machine />,
   },
@@ -36,7 +32,6 @@ let Router = [
     element: <Login />,
     children: [
       { path: "", element: <LoginUserName /> },
-      { path: "phone", element: <LoginPhone /> },
     ],
   },
 ];
