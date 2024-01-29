@@ -12,13 +12,13 @@ export default {
         description: "",
         icons: [
           {
-            src: "/64.png",
-            sizes: "64x64",
+            src: "/logo/72.png",
+            sizes: "72x72",
             type: "image/png",
           },
           {
-            src: "/logo/85.png",
-            sizes: "64x64",
+            src: "/logo/144.png",
+            sizes: "144x144",
             type: "image/png",
           },
           {
@@ -27,7 +27,7 @@ export default {
             type: "image/png",
           },
           {
-            src: "/logo/128.png",
+            src: "/logo/256.png",
             sizes: "256x256",
             type: "image/png",
           },

@@ -7,15 +7,14 @@ const loginUserName = () => {
   let navigate = useNavigate();
   let onSubmit = async (data) => {
     await axios
-      .post("http://127.0.0.1:5000/login", {
+      .post("https://park-app.liara.run/api/visitors/login", {
         username: data.username,
-        password: data.pws,
+        Pass: data.pass,
       })
       .then((res) => {
         console.log(res);
         if (res.status == 200) {
-          localStorage.setItem("token", res.data.access_token);
-          navigate("/")
+          navigate("/machine");
         } else {
         }
       });
@@ -35,7 +34,7 @@ const loginUserName = () => {
         )}
       />
       <Controller
-        name="pws"
+        name="pass"
         control={control}
         render={({ field }) => (
           <Input

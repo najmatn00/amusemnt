@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import logo from "../assets/img/LOGO.png";
 import m from "../assets/img/mach.png";
 import boy from "../assets/img/boy.png";
+import { Link } from "react-router-dom";
 const Machine = () => {
     let { handleSubmit, register } = useForm();
     let onSubmit = (data) => {
@@ -30,22 +31,28 @@ const Machine = () => {
       <p className="text-[20px] text-right px-8 py-4 wmajik">
         :محبوب ترین بازی ها{" "}
       </p>
-      <div className="flex gap-16 w-full justify-center ">
-        <img className=" rounded-xl" src={m} alt="" />
-        <img className=" rounded-xl" src={m} alt="" />
-      </div>
+      <Link to="/mainmachine">
+        <div className="flex gap-16 w-full justify-center ">
+          <img className=" rounded-xl" src={m} alt="" />
+          <img className=" rounded-xl" src={m} alt="" />
+        </div>
+      </Link>
       <div className="text-right px-8 text-[20px] py-4 wmajik">
         <p>:بازی های مناسب شما</p>
       </div>
       <div className="flex flex-col gap-6">
-        <div className="flex gap-16 w-full justify-center ">
-          <img className=" rounded-xl" src={m} alt="" />
-          <img className=" rounded-xl" src={m} alt="" />
-        </div>
-        <div className="flex gap-16 w-full justify-center ">
-          <img className=" rounded-xl" src={m} alt="" />
-          <img className=" rounded-xl" src={m} alt="" />
-        </div>
+        <Link to="/mainmachine">
+          <div className="flex gap-16 w-full justify-center ">
+            <img className=" rounded-xl" src={m} alt="" />
+            <img className=" rounded-xl" src={m} alt="" />
+          </div>
+        </Link>
+        <Link to="/mainmachine">
+          <div className="flex gap-16 w-full justify-center ">
+            <img className=" rounded-xl" src={m} alt="" />
+            <img className=" rounded-xl" src={m} alt="" />
+          </div>
+        </Link>
       </div>
     </div>
   );

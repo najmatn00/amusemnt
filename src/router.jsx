@@ -1,32 +1,33 @@
-import { Children } from "react";
 import Login from "./pages/Login";
 import Rejester from "./pages/Rejester";
 import Welcom from "./pages/Welcom";
 import LoginPhone from "./pages/login-sub/login-phone";
 import LoginUserName from "./pages/login-sub/login-username";
-import IsLogin from "./utility/isLogin";
 import Machine from "./pages/machine";
-import MainTour from "./pages/tour/main";
 let Router = [
   {
     path: "/",
     element: <Welcom />,
   },
   {
-    path: "/test",
-    element: <h1>salam</h1>,
+    path: "/mainmachine",
+    element: <MainMachines />,
   },
   {
     path: "/signup",
     element: <Rejester />,
   },
   {
+    path: "/su",
+    element: <Su />,
+  },
+  {
     path: "/home",
-    element: <h1>slaam</h1>,
+    element: <h1>home</h1>,
   },
   {
     path: "/machine",
-    element: <Machine/>,
+    element: <Machine />,
   },
   {
     path: "/login",

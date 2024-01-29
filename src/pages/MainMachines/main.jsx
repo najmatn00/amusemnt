@@ -4,7 +4,7 @@ import ShowImg from './showImg'
 // import arrow from "../../assets/arrow.svg"
 import { useState } from "react";
 
-const MainTour = () => {
+const MainMachines = () => {
 
   
     return ( <div className="h-screen">
@@ -15,4 +15,4 @@ const MainTour = () => {
     </div> );
 }
  
-export default MainTour;
+export default MainMachines;

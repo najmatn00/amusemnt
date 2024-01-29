@@ -10,14 +10,19 @@ const Rejester = () => {
   let submitHandler = async (data) => {
     console.log(data);
     await axios
-      .post("http://127.0.0.1:5000/register", {
-        username: data.user,
-        password: data.pws,
+      .post("https://park-app.liara.run/api/visitors", {
+        username: data.username,
+        firstName: data.firstName,
+        lastName: data.lastName,
+        phone: data.phone,
+        pass: data.pass,
+        age: 150,
+        sex: data.sex,
       })
       .then((res) => {
         try {
           if (res.status == 200) {
-            navigate("/");
+            navigate("/machine");
           }
         } catch (error) {}
       });
@@ -27,7 +32,7 @@ const Rejester = () => {
       <div className="">
         <img className="w-full" src={signUp} alt="" />
       </div>
-      <div className="bg-[#1C0F2A] absolute top-[85%] rounded-t-3xl left-0 w-full  h-[64vh] pb-16">
+      <div className="bg-[#1C0F2A] absolute top-[85%] rounded-t-3xl left-0 w-full pb-16">
         <div className="flex justify-center text-[40px] text-white my-4">
           <p className="wmajik">ثبت نام</p>
         </div>
@@ -38,10 +43,43 @@ const Rejester = () => {
         </div>
         <form action="" onSubmit={handleSubmit(submitHandler)}>
           <Controller
-            name="user"
+            name="username"
             control={control}
             defaultValue=""
             render={({ field }) => <Input {...field} />}
+          />
+          <Controller
+            name="firstName"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <Input placeholder="اسم" label="اسم" {...field} />
+            )}
+          />
+          <Controller
+            name="lastName"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <Input placeholder="فامیل" label="فامیل" {...field} />
+            )}
+          />
+
+          <Controller
+            name="age"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <Input placeholder="سن" label="سن" {...field} />
+            )}
+          />
+          <Controller
+            name="sex"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <Input placeholder="جنسیت" label="جنسیت" {...field} />
+            )}
           />
 
           <Controller
@@ -58,7 +96,7 @@ const Rejester = () => {
             )}
           />
           <Controller
-            name="pws"
+            name="pass"
             control={control}
             defaultValue=""
             render={({ field }) => (
