@@ -4,6 +4,8 @@ import Welcom from "./pages/Welcom";
 import LoginPhone from "./pages/login-sub/login-phone";
 import LoginUserName from "./pages/login-sub/login-username";
 import Machine from "./pages/machine";
+import Su from "./pages/su";
+import MainMachines from "./pages/MainMachines/main";
 let Router = [
   {
     path: "/",
@@ -11,7 +13,7 @@ let Router = [
   },
   {
     path: "/mainmachine",
-    element: <MainMachines />,
+    element: <MainMachines/>,
   },
   {
     path: "/signup",
