@@ -12,8 +12,8 @@ let Router = [
     element: <Welcom />,
   },
   {
-    path: "/mainmachine",
-    element: <MainMachines/>,
+    path: "/mainmachine/:id",
+    element: <MainMachines />,
   },
   {
     path: "/signup",
@@ -30,9 +30,7 @@ let Router = [
   {
     path: "/login",
     element: <Login />,
-    children: [
-      { path: "", element: <LoginUserName /> },
-    ],
+    children: [{ path: "", element: <LoginUserName /> }],
   },
 ];
 export default Router;

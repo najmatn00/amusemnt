@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Servise = () => {
+const Servise = ({price}) => {
   return (
     <>
       <div className=" mb-16 absolute flex items-center  w-full  justify-between bottom-0 right-0">
@@ -16,7 +16,7 @@ const Servise = () => {
               هزار تومان
             </span>
             <span className="text-3xl font-black gradient-text text-[#FFE3A7]">
-              330
+              {price}
             </span>
           </p>
         </div>

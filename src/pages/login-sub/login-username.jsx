@@ -7,13 +7,13 @@ const loginUserName = () => {
   let navigate = useNavigate();
   let onSubmit = async (data) => {
     await axios
-      .post("https://park-app.liara.run/api/visitors/login", {
+      .post("http://localhost:3000/api/visitors/login", {
         username: data.username,
         Pass: data.pass,
       })
       .then((res) => {
         console.log(res);
-        if (res.status == 200) {
+        if (res.data["exists"]) {
           navigate("/machine");
         } else {
         }
